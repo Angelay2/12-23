@@ -5,9 +5,7 @@
 //只要找到一个能整除的，就一定不是素数。
 //如果所有的数都找完了也没找到整除的，就是素数。
 int IsPrime(int num){
-	if (num <= 2){
-		return 1;
-	}for (int i = 2; i < num; i++){
+	for (int i = 2; i < num; i++){
 		if (num % i == 0){
 			return 0;
 		}
@@ -75,8 +73,5 @@ int three(){
 	printf("两数交换后为:\n%d %d\n", a, b);
 	system("pause");
 	return 0;
-}
-int main(){
-
 }
 			 
